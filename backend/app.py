@@ -18,9 +18,9 @@ def create_app(config_name='default'):
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
     
-    # Enable CORS
+    # Enable CORS for ALL routes, including /health
     CORS(app, resources={
-        r"/api/*": {
+        r"/*": {
             "origins": app.config['CORS_ORIGINS']
         }
     })

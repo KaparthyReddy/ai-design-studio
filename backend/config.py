@@ -31,7 +31,7 @@ class Config:
     NUM_STEPS = 300
     
     # CORS settings
-    CORS_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000']
+    CORS_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5001']
     
     @staticmethod
     def init_app(app):
